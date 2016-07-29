@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Apptentive.h"
+#import <mParticle.h>
 
 @interface ViewController ()
 
@@ -25,9 +26,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	if (indexPath.section == 0) {
-		[[Apptentive sharedConnection] engage:@"event" fromViewController:self];
+		[[MParticle sharedInstance] logEvent:[[MPEvent alloc] initWithName:@"event" type:MPEventTypeClick]];
 	} else {
-		[[Apptentive sharedConnection] presentMessageCenterFromViewController:self];
+		Apptentive *apptentive = [[MParticle sharedInstance] kitInstance:@(MPKitInstanceApptentive)];
+		if (apptentive) {
+			[apptentive presentMessageCenterFromViewController:self];
+		}
 	}
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "Apptentive.h"
+#import <mParticle.h>
 
 @interface AppDelegate ()
 
@@ -17,7 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	[Apptentive sharedConnection].APIKey = @"<Your Apptentive API Key>";
+	[MParticle sharedInstance].logLevel = MPILogLevelVerbose;
+	[[MParticle sharedInstance] startWithKey:@"<Your mParticle Key>" secret:@"<Your mParticle Secret>"];
 
 	return YES;
 }

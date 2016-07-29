@@ -1,5 +1,6 @@
 platform :ios, '7.0'
 
 target 'iOSExample' do
-   pod 'apptentive-ios', '~> 3.2'
+    pod 'mParticle-Apple-SDK', '~> 6.4'
+    pod 'mParticle-Apptentive'
 end
