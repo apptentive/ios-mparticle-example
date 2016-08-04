@@ -1,0 +1,21 @@
+PODS:
+  - apptentive-ios (3.2.0)
+  - mParticle-Apple-SDK (6.4.0):
+    - mParticle-Apple-SDK/mParticle (= 6.4.0)
+  - mParticle-Apple-SDK/mParticle (6.4.0)
+  - mParticle-Apptentive (6.4.0):
+    - apptentive-ios (~> 3.2)
+    - mParticle-Apple-SDK/mParticle (~> 6.4)
+
+DEPENDENCIES:
+  - mParticle-Apple-SDK (~> 6.4)
+  - mParticle-Apptentive
+
+SPEC CHECKSUMS:
+  apptentive-ios: 33b22a15871b855484b717db66ace696797f64b5
+  mParticle-Apple-SDK: 6d6d904499881e3469f78be89201dece43a54fbb
+  mParticle-Apptentive: 85bdf086ef07d967ddd0ec87c0c8b9b47b26d7a0
+
+PODFILE CHECKSUM: 28f5a44805ecbd800d39c29d7640078e05e9a0e7
+
+COCOAPODS: 1.0.1

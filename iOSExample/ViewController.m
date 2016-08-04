@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "Apptentive.h"
+#import <mParticle.h>
 
 @interface ViewController ()
+
+@property (strong, nonatomic) IBOutlet UITableViewCell *messageCenterCell;
 
 @end
 
@@ -16,12 +20,19 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+	self.messageCenterCell.accessoryView = [[Apptentive sharedConnection] unreadMessageCountAccessoryView:YES];
 }
 
-- (void)didReceiveMemoryWarning {
-	[super didReceiveMemoryWarning];
-	// Dispose of any resources that can be recreated.
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	if (indexPath.section == 0) {
+		[[MParticle sharedInstance] logEvent:[[MPEvent alloc] initWithName:@"event" type:MPEventTypeClick]];
+	} else {
+		Apptentive *apptentive = [[MParticle sharedInstance] kitInstance:@(MPKitInstanceApptentive)];
+		if (apptentive) {
+			[apptentive presentMessageCenterFromViewController:self];
+		}
+	}
 }
 
 @end
