@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	[MParticle sharedInstance].logLevel = MPILogLevelVerbose;
-	[[MParticle sharedInstance] startWithKey:@"<Your mParticle Key>" secret:@"<Your mParticle Secret>"];
+	[[MParticle sharedInstance] startWithKey:@"<#Your mParticle Key#>" secret:@"<#Your mParticle Secret#>"];
 
 	return YES;
 }
