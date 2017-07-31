@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <mParticle.h>
+#import "mParticle.h"
 
 @interface AppDelegate ()
 

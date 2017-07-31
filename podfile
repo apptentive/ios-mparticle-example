@@ -1,6 +1,7 @@
-platform :ios, '7.0'
+platform :ios, '8.0'
 
 target 'iOSExample' do
-    pod 'mParticle-Apple-SDK', '~> 6.4'
+    use_frameworks!
     pod 'mParticle-Apptentive'
+    pod 'mParticle-Apple-SDK', '~> 6.11'
 end
