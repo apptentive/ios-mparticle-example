@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <mParticle.h>
+#import "mParticle.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	[MParticle sharedInstance].logLevel = MPILogLevelVerbose;
-	[[MParticle sharedInstance] startWithKey:@"<Your mParticle Key>" secret:@"<Your mParticle Secret>"];
+
+	MParticleOptions *options = [MParticleOptions optionsWithKey:@"<#Your mParticle Key#>" secret:@"<#Your mParticle Secret#>"];
+	[[MParticle sharedInstance] startWithOptions:options];
 
 	return YES;
 }
