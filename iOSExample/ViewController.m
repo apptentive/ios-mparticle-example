@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "Apptentive.h"
-#import <mParticle.h>
+#import "mParticle.h"
 
 @interface ViewController ()
 
@@ -26,7 +26,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	if (indexPath.section == 0) {
-		[[MParticle sharedInstance] logEvent:[[MPEvent alloc] initWithName:@"event" type:MPEventTypeClick]];
+		[[MParticle sharedInstance] logEvent:[[MPEvent alloc] initWithName:@"survey_event" type:MPEventTypeOther]];
+		[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	} else {
 		Apptentive *apptentive = [[MParticle sharedInstance] kitInstance:@(MPKitInstanceApptentive)];
 		if (apptentive) {
