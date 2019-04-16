@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "Apptentive.h"
-#import "mParticle.h"
+@import mParticle_Apple_SDK;
+@import mParticle_Apptentive;
 
 @interface ViewController ()
 

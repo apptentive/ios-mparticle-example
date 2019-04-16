@@ -1,0 +1,2 @@
+github "mparticle-integrations/mparticle-apple-integration-apptentive" "HEAD"
+github "mparticle/mparticle-apple-sdk" == 7.8.4
