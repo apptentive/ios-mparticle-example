@@ -1,10 +1,9 @@
 platform :ios, '12.0'
-source 'https://github.com/apptentive/cocoapods-specs.git'
 source 'https://cdn.cocoapods.org/'
 
 target 'iOSExample' do
     use_frameworks!
 
     pod 'mParticle-Apple-SDK'
-    pod 'mParticle-Apptentive', '8.0.10'
+    pod 'mParticle-Apptentive', :path => "../mparticle-apple-integration-apptentive"
 end

@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
-	//self.messageCenterCell.accessoryView = [[Apptentive sharedConnection] unreadMessageCountAccessoryView:YES];
+	//self.messageCenterCell.accessoryView = [Apptentive.shared unreadMessageCountAccessoryView:YES];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -31,7 +31,7 @@
 	} else {
 		Apptentive *apptentive = [[MParticle sharedInstance] kitInstance:@(MPKitInstanceApptentive)];
 		if (apptentive) {
-			//[apptentive presentMessageCenterFromViewController:self];
+			[apptentive presentMessageCenterFromViewController:self completion:nil];
 		}
 	}
 }
