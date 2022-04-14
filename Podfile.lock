@@ -1,11 +1,11 @@
 PODS:
-  - ApptentiveKit (6.0.0)
+  - ApptentiveKit (6.0.1)
   - mParticle-Apple-SDK (8.7.0):
     - mParticle-Apple-SDK/mParticle (= 8.7.0)
   - mParticle-Apple-SDK/mParticle (8.7.0)
-  - mParticle-Apptentive (8.0.4):
+  - mParticle-Apptentive (8.7):
     - ApptentiveKit (~> 6.0)
-    - mParticle-Apple-SDK/mParticle (~> 8.0)
+    - mParticle-Apple-SDK/mParticle (~> 8.7)
 
 DEPENDENCIES:
   - mParticle-Apple-SDK
@@ -21,9 +21,9 @@ EXTERNAL SOURCES:
     :path: "../mparticle-apple-integration-apptentive"
 
 SPEC CHECKSUMS:
-  ApptentiveKit: 507088df5b9ee2cd6d77427774e04463d590e086
+  ApptentiveKit: 5ec4cac0d6e62362f2349588d09646b531881ae7
   mParticle-Apple-SDK: 34e77f0e94641cb2aabbf698b8ac53eeb4574d27
-  mParticle-Apptentive: 339c51f0128b61de91f261361dace9c78d1bfcc5
+  mParticle-Apptentive: 8dd4a8a5337c7a57ba68a82a223cc401d211a6e5
 
 PODFILE CHECKSUM: 411a528b9d586df98341c1e76e725e98e1acb3ba
 
