@@ -5,5 +5,5 @@ target 'iOSExample' do
     use_frameworks!
 
     pod 'mParticle-Apple-SDK'
-    pod 'mParticle-Apptentive', :path => "../mparticle-apple-integration-apptentive"
+    pod 'mParticle-Apptentive'
 end
