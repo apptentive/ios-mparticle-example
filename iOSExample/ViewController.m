@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "Apptentive.h"
+#import "ApptentiveKit-Swift.h"
 #import "mParticle.h"
 
 @interface ViewController ()
@@ -17,12 +17,6 @@
 @end
 
 @implementation ViewController
-
-- (void)viewDidLoad {
-	[super viewDidLoad];
-
-	self.messageCenterCell.accessoryView = [[Apptentive sharedConnection] unreadMessageCountAccessoryView:YES];
-}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	if (indexPath.section == 0) {
