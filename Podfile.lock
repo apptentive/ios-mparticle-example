@@ -1,27 +1,27 @@
 PODS:
-  - apptentive-ios (5.2.3)
-  - mParticle-Apple-SDK (7.9.2):
-    - mParticle-Apple-SDK/mParticle (= 7.9.2)
-  - mParticle-Apple-SDK/mParticle (7.9.2)
-  - mParticle-Apptentive (7.9.1):
-    - apptentive-ios (~> 5.1)
-    - mParticle-Apple-SDK/mParticle (~> 7.9.0)
+  - ApptentiveKit (6.0.3)
+  - mParticle-Apple-SDK (8.8.0):
+    - mParticle-Apple-SDK/mParticle (= 8.8.0)
+  - mParticle-Apple-SDK/mParticle (8.8.0)
+  - mParticle-Apptentive (8.0.4):
+    - ApptentiveKit (~> 6.0.2)
+    - mParticle-Apple-SDK/mParticle (~> 8.7)
 
 DEPENDENCIES:
   - mParticle-Apple-SDK
   - mParticle-Apptentive
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - apptentive-ios
+  trunk:
+    - ApptentiveKit
     - mParticle-Apple-SDK
     - mParticle-Apptentive
 
 SPEC CHECKSUMS:
-  apptentive-ios: db6c7ee9e319722dd419a2e354eaa855ce364b91
-  mParticle-Apple-SDK: 96dc6f87d37a06470160356a3d292a86aef53639
-  mParticle-Apptentive: 100149b76c4735fd27293594bf0a0c8a4e5e4e86
+  ApptentiveKit: 2040cbb275a20cfddca7665522036fe435856097
+  mParticle-Apple-SDK: fbef6ad9fe5e418d60ee57b7b0ccb5117672c585
+  mParticle-Apptentive: 01cca72055407bdfc8c87f71a6ddf5dd00345356
 
-PODFILE CHECKSUM: f8017f011d380a6a6355025c8a4ae8e8cda2979e
+PODFILE CHECKSUM: a2affced247b38a2b3b31cc4d3d0e273f74c0758
 
-COCOAPODS: 1.6.0
+COCOAPODS: 1.11.3
