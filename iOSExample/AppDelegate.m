@@ -17,9 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	[MParticle sharedInstance].logLevel = MPILogLevelVerbose;
 
 	MParticleOptions *options = [MParticleOptions optionsWithKey:@"<#Your mParticle Key#>" secret:@"<#Your mParticle Secret#>"];
+    options.logLevel = MPILogLevelVerbose;
 	[[MParticle sharedInstance] startWithOptions:options];
 
 	return YES;
