@@ -1,8 +1,8 @@
-platform :ios, '9.0'
+platform :ios, '13.0'
 
 target 'iOSExample' do
     use_frameworks!
 
-    pod 'mParticle-Apple-SDK'
-    pod 'mParticle-Apptentive'
+    pod 'mParticle-Apple-SDK', '~>8.21'
+    pod 'mParticle-Apptentive', :path => '../mparticle-apple-integration-apptentive'
 end
