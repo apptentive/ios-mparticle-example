@@ -1,27 +1,40 @@
 PODS:
-  - ApptentiveKit (6.0.3)
-  - mParticle-Apple-SDK (8.8.0):
-    - mParticle-Apple-SDK/mParticle (= 8.8.0)
-  - mParticle-Apple-SDK/mParticle (8.8.0)
-  - mParticle-Apptentive (8.0.4):
-    - ApptentiveKit (~> 6.0.2)
-    - mParticle-Apple-SDK/mParticle (~> 8.7)
+  - ApptentiveKit (7.4.0)
+  - mParticle-Apple-SDK (9.7.4):
+    - mParticle-Apple-SDK-ObjC (= 9.7.4)
+    - RoktContracts (~> 2.0)
+  - mParticle-Apple-SDK-ObjC (9.7.4):
+    - mParticle-Apple-SDK-ObjC/mParticle (= 9.7.4)
+  - mParticle-Apple-SDK-ObjC/mParticle (9.7.4):
+    - mParticle-Apple-SDK-Swift (= 9.7.4)
+    - RoktContracts (~> 2.0)
+  - mParticle-Apple-SDK-Swift (9.7.4)
+  - mParticle-Apptentive-7 (9.7.4):
+    - ApptentiveKit (~> 7.0)
+    - mParticle-Apple-SDK (~> 9.0)
+  - RoktContracts (2.0.2)
 
 DEPENDENCIES:
-  - mParticle-Apple-SDK
-  - mParticle-Apptentive
+  - mParticle-Apple-SDK (~> 9.0)
+  - mParticle-Apptentive-7 (~> 9.0)
 
 SPEC REPOS:
   trunk:
     - ApptentiveKit
     - mParticle-Apple-SDK
-    - mParticle-Apptentive
+    - mParticle-Apple-SDK-ObjC
+    - mParticle-Apple-SDK-Swift
+    - mParticle-Apptentive-7
+    - RoktContracts
 
 SPEC CHECKSUMS:
-  ApptentiveKit: 2040cbb275a20cfddca7665522036fe435856097
-  mParticle-Apple-SDK: fbef6ad9fe5e418d60ee57b7b0ccb5117672c585
-  mParticle-Apptentive: 01cca72055407bdfc8c87f71a6ddf5dd00345356
+  ApptentiveKit: 42e894ccdff2b6b5f1201ae58f37807688d1fc91
+  mParticle-Apple-SDK: b3a3af88c3b08f98249bf6ae4014078e6afce14e
+  mParticle-Apple-SDK-ObjC: b1b891c359e3999eb5769579045065bf207c689a
+  mParticle-Apple-SDK-Swift: 10b7dc7ffd7acec4b6598b3ecd1f2d61e2a8a3da
+  mParticle-Apptentive-7: 578ea62e94f119e9ea2fcb07edc1775fc80f1a24
+  RoktContracts: 0aba38d14cf6cbc09d6f6274a9c10ad5971149c1
 
-PODFILE CHECKSUM: a2affced247b38a2b3b31cc4d3d0e273f74c0758
+PODFILE CHECKSUM: 47d2014e4babaf7ff4a3eb6245dafa2ca9907e54
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.17.0
